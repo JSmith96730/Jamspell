@@ -441,7 +441,7 @@ void TSpellCorrector::PrepareCache() {
 }
 
 constexpr uint64_t SPELL_CHECKER_CACHE_MAGIC_BYTE = 3811558393781437494L;
-constexpr uint16_t SPELL_CHECKER_CACHE_VERSION = 1;
+constexpr uint16_t SPELL_CHECKER_CACHE_VERSION = 11;
 
 bool TSpellCorrector::LoadCache(const std::string& cacheFile) {
     std::ifstream in(cacheFile, std::ios::binary);
