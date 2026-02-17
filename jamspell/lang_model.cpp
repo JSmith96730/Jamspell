@@ -163,8 +163,8 @@ bool TLangModel::Train(const std::string& fileName, const std::string& alphabetF
 
         std::cerr << "[info] ngrams1: " << grams1.size() << "\n";
         std::cerr << "[info] ngrams2: " << grams2.size() << "\n";
-        std::cerr << "[info] ngrams3: " << grams3.size() << "\n";
-        std::cerr << "[info] total: " << grams3.size() + grams2.size() + grams1.size() << "\n";
+        // std::cerr << "[info] ngrams3: " << grams3.size() << "\n";
+        // std::cerr << "[info] total: " << grams3.size() + grams2.size() + grams1.size() << "\n";
 
         PrepareNgramKeys(grams1, keys);
         PrepareNgramKeys(grams2, keys);
@@ -253,7 +253,7 @@ bool TLangModel::Load(const std::string& modelFileName) {
         return false;
     }
     Load(in);
-    magicByte = 0;
+    magicByte = 1000;
     NHandyPack::Load(in, magicByte);
     if (magicByte != LANG_MODEL_MAGIC_BYTE) {
         Clear();
