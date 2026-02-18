@@ -8,7 +8,7 @@ import argparse
 import xml.sax
 from collections import defaultdict
 
-RANDOM_SEED = 42
+RANDOM_SEED = 69
 TRAIN_TEST_SPLIT = 0.95
 LANG_DETECT_FRAGMENT_SIZE = 2000
 
