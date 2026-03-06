@@ -253,7 +253,7 @@ bool TLangModel::Load(const std::string& modelFileName) {
         return false;
     }
     Load(in);
-    magicByte = 1000;
+    magicByte = 2000;
     NHandyPack::Load(in, magicByte);
     if (magicByte != LANG_MODEL_MAGIC_BYTE) {
         Clear();
